@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".location">
+
+    <AutoCompleteTextView
+        android:id="@+id/place"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:completionThreshold="1"
+        android:hint="Search for area,street name..." />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/place"
+        android:layout_marginTop="12dp"
+        android:text="SET DELIVERY LOCATION"
+        android:textColor="@color/Orange"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/place"
+        app:srcCompat="@drawable/search" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="149dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/place"
+        android:layout_marginTop="132dp"
+        android:text="Current Location"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/place"
+        android:layout_below="@+id/textView21"
+        android:text="Using GPS"
+        android:onClick="gpss"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="122dp"
+        android:layout_toStartOf="@+id/place"
+        app:srcCompat="@drawable/gps" />
+
+
+</RelativeLayout>
